@@ -13,4 +13,15 @@
 	<context:component-scan
 		base-package="com.chuix.springdemo.controller">
 	</context:component-scan>
+	<mvc:annotation-driven></mvc:annotation-driven>
+	<bean id="randomizer1"
+		class="com.chuix.springdemo.services.RandomizerRequestScope"
+		scope="request">
+	<aop:scoped-proxy />
+	</bean>
+	<bean id="randomizer2"
+		class="com.chuix.springdemo.services.RandomizerSessionScope"
+		scope="session">
+	<aop:scoped-proxy />
+	</bean>
 </beans>

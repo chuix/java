@@ -24,6 +24,13 @@ public class BeanScopeApp {
 		System.out.println(org);
 		System.out.println(org2);
 		
+		if(org == org2) {
+			System.out.println("Sigleton scope test: org and org2 point to the same instance.");
+		}
+		else {
+			System.out.println("Both org and org2 are diferents objects");
+		}
+		
 		System.out.println(org.corporateService());
 		
 		// close the application conext (container)

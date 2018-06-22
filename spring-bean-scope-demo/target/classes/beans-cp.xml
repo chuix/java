@@ -5,7 +5,7 @@
 
 
 	<bean id="myorg" class="com.chuix.springdemo.domain.Organization"
-		scope="singleton">
+		scope="prototype">
 		<constructor-arg value="Amazon" index="0"></constructor-arg>
 		<constructor-arg value="1994" index="1"></constructor-arg>
 		<property name="postalCode" value="75757"></property>
